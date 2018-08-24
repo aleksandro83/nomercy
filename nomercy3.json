@@ -1,8 +1,11 @@
 {
     "nomercy":{
        "new":{
-           "new":{
-               
+           "cevada":{
+                "cerveja":[
+                    "lupulo",
+                    "malte"
+                ]
            }
        } 
     }
