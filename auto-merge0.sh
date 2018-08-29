@@ -28,9 +28,6 @@
 # Checkout master branch and merge version branch into master
 git checkout nomercy0
 git merge master --no-ff --no-edit
-
-# Run version script, creating a version tag, and push commit and tags to remote
-npm version nomercy0
 git push
 CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
