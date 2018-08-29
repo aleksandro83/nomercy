@@ -36,7 +36,6 @@ git merge master --no-ff --no-edit
 # Run version script, creating a version tag, and push commit and tags to remote
 npm version nomercy0
 git push
-git push --tags
 
 # # Checkout dev branch and merge master into dev (to ensure we have the version)
 # git checkout dev
