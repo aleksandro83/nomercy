@@ -6,6 +6,6 @@ LAST_COMMIT=$(git rev-list -1 HEAD)
 
 echo Automatically merging commit $LAST_COMMIT from $CURRENT_BRANCH rippling to automaticMergeTest
 
-git checkout automaticMergeTest
+git checkout nomercy0
 git merge master
 git checkout $CURRENT_BRANCH
