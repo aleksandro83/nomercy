@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-# Assuming you have a master and dev branch, and that you make new
-# release branches named as the version they correspond to, e.g. 1.0.3
-# Usage: ./release.sh 1.0.3
-
 # Get version argument and verify
 
 # version=$1
