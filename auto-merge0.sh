@@ -38,10 +38,6 @@ git push
 # git merge master --no-ff --no-edit
 # git push
 
-# # Delete version branch locally and on remote
-# git branch -D $version
-# git push origin --delete $version
-
 # Success
 echo "-------------------------------------------------------------------------"
 echo "Release $version complete"
