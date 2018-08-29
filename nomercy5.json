@@ -1,10 +1,10 @@
 {
-    "nomercy":{
+    "auto-merge":{
        "new":{
-           "cevada":{
-                "cerveja":[
-                    "lupulo",
-                    "malte"
+           "nomercy0":{
+                "masterinto":[
+                    "files",
+                    "file"
                 ]
            }
        } 
