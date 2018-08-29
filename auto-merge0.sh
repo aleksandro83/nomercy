@@ -32,6 +32,7 @@ git merge master --no-ff --no-edit
 # Run version script, creating a version tag, and push commit and tags to remote
 npm version nomercy0
 git push
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
 # # Checkout dev branch and merge master into dev (to ensure we have the version)
 # git checkout dev
@@ -40,4 +41,4 @@ git push
 
 # Success
 echo "-------------------------------------------------------------------------"
-echo "Release $version complete"
+echo "Merge master into $CURRENT_BRANCH complete"
