@@ -19,7 +19,7 @@ fi
 
 testdate="$1"
 
-git for-each-ref --sort=committerdate refs/remotes/ --pretty=format:"%(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(*authorname) - (%(color:green)%(committerdate:short)%(color:reset)) - %(*contents:subject) - %(HEAD)" | \
+git for-each-ref --sort=committerdate refs/remotes/ --format="%(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(*authorname) - (%(color:green)%(committerdate:short)%(color:reset)) - %(*contents:subject) - %(HEAD)" | \
   while read ref
   do
     if [ -n "$(git rev-list --max-count=1 --untill="$testdate" $ref)" ] 
